@@ -30,8 +30,8 @@ export default function Navbar() {
         </div>
       </div>
       {/* RIGHT */}
-      <div className="flex gap-2 items-center">
-        <span className="bg-gray-200 w-6 h-6 rounded-full flex justify-center items-center">
+      <div className="flex items-center gap-2">
+        <span className="flex items-center justify-center w-6 h-6 bg-gray-200 rounded-full">
           <FaRegBell size={10} />
         </span>
         <FaUserCircle size={24} />

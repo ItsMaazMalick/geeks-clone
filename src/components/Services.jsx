@@ -24,7 +24,7 @@ export default function Services() {
     },
   ];
   return (
-    <div className="flex items-center justify-between h-16 gap-8 bg-white px-60">
+    <div className="flex items-center h-16 gap-2 bg-white justify-evenly px-60">
       {ser.map((service) => (
         <div key={service.id} className="flex items-center gap-4">
           {/* LEFT */}

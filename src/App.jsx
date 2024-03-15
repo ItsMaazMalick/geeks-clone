@@ -6,9 +6,11 @@ import { GrGraphQl } from "react-icons/gr";
 import { MdOutlineWatchLater } from "react-icons/md";
 import { MdOutlineSignalCellularAlt } from "react-icons/md";
 import { FaStar } from "react-icons/fa6";
-import { FaStarHalfAlt } from "react-icons/fa";
 import { FaRegStar } from "react-icons/fa6";
 import { IoLogoJavascript } from "react-icons/io5";
+import { FaNodeJs } from "react-icons/fa";
+import { LiaLaravel } from "react-icons/lia";
+import { MdSignalCellular4Bar, MdSignalCellular2Bar } from "react-icons/md";
 
 const arr = [1, 2, 3, 4, 5];
 
@@ -36,6 +38,30 @@ const cards = [
     reviews: 1900,
     bg: "bg-yellow-400",
     color: "black",
+  },
+  {
+    id: 3,
+    title: "Node js",
+    icon: <FaNodeJs className="text-white" size={30} />,
+    desc: "GraphQl: Instroduction to graphQl for beginners",
+    time: "3h 10m",
+    status: "Intermediate",
+    ratings: 2,
+    reviews: 100,
+    bg: "bg-green-700",
+    color: "white",
+  },
+  {
+    id: 4,
+    title: "Laravel",
+    icon: <LiaLaravel className="text-white" size={30} />,
+    desc: "GraphQl: Instroduction to graphQl for beginners",
+    time: "3h 10m",
+    status: "Intermediate",
+    ratings: 2,
+    reviews: 100,
+    bg: "bg-red-800",
+    color: "white",
   },
 ];
 
@@ -72,7 +98,11 @@ function App() {
                   <MdOutlineWatchLater size={13} className="mr-1" /> {card.time}
                 </div>
                 <div className="flex items-center">
-                  <MdOutlineSignalCellularAlt size={13} className="mr-1" />{" "}
+                  {card.status === "Advanced" ? (
+                    <MdSignalCellular4Bar size={13} className="mr-1" />
+                  ) : (
+                    <MdSignalCellular2Bar size={13} className="mr-1" />
+                  )}
                   {card.status}
                 </div>
               </div>
