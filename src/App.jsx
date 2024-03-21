@@ -19,6 +19,7 @@ export default function App() {
       {text.map((item) => (
         <h2 key={item.id}>{item.title}</h2>
       ))}
+      <h2>This is new H2</h2>
     </div>
   );
 }
